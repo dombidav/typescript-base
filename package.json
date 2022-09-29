@@ -1,0 +1,19 @@
+{
+  "name": "ts-test",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "dev": "npx ts-node src/main.ts",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "lint": "npx eslint src --ext .ts",
+    "lint:fix": "npx eslint src --ext .ts --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.0"
+  }
+}
